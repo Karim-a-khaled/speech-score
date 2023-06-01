@@ -1,0 +1,9 @@
+.register{
+    width: 50%;
+    margin-right: 10px;
+}
+.login{
+    width: 50%;
+    margin-left: 10px;
+    font-size: 15px;
+}

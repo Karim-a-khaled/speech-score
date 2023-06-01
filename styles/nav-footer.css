@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+  font-family: 'Poppins', sans-serif;
+}
+a{
+  color: white !important;
+}
+
+.btn{
+  background-color: #1e4a66;
+  opacity: 0.9;
+}
+.btn:hover{
+  background-color: #1e4a66;
+  opacity: 1;
+}
+
+
+.social-icons a:hover {
+  transform: translateY(-5px);
+}
+
+.social-icons .fa-facebook {
+  background-color: #3B5998;
+}
+
+.social-icons .fa-linkedin {
+  background-color: #0077B5;
+}
+
+.social-icons .fa-twitter {
+  background-color: #00acee;
+}
+
+.footer-li{
+  margin-left: 8px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+.footer-li:hover{
+  color: #0077B5;
+}
+
+.footer {
+  color: black;
+  padding: 10px 0 !important;
+  color: #fff;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons li:last-child {
+  margin-right: 0;
+}
+
+.social-icons a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+.icon-footer{
+  padding-right:15px ;
+}
+.icon-footer img{
+  width: 35px;
+  height: 35px;
+}
+

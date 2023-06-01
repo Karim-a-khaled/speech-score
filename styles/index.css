@@ -1,0 +1,75 @@
+.bg-light{
+  color: black !important;
+}
+
+.showcase{
+  height: 100vh;
+  background-image: url(/assets/notebook-gc1f2a5a6c_1280.jpg);
+  background-size: cover; 
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.welcome{
+  width: 60%;
+  padding: 100px;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+.btn{
+  margin-top: 20px;
+  width: 35%;
+  font-size: 1.5rem;
+}
+
+
+@keyframes slidein {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* Apply the animation to the heading */
+.welcome .first {
+  overflow: hidden; /* Ensures the text does not overflow the container */
+  border-right: .15em solid white; /* Creates the blinking cursor */
+  white-space: nowrap; /* Ensures the text is on one line */
+  font-size: 3em; /* Optional: adjust the font size as needed */
+  animation: typing 1s steps(30, end);
+}
+  
+  .welcome .second {
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 2.5em;
+    animation: slidein 2s ease-in-out;
+  }
+  
+
+  /* Apply the animation to the button */
+  .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+
+    border-radius: 4px;
+    cursor: pointer;
+    animation: slidein 1s ease-in;
+  }

@@ -1,0 +1,39 @@
+.body{
+  background-image: url(/assets/notebook-gc1f2a5a6c_1280.jpg);
+  background-size: cover; 
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.btn-quiz{
+  width: 100%;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes slidein {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.card-animation-1{
+  animation: slidein 0.5s ease-in;
+}
+.card-animation-2{
+  animation: slidein 1s ease-in;
+}
+.card-animation-3{
+  animation: slidein 1.3s ease-in;
+}
+.btn{
+  animation: slidein 1.5s ease-in;
+  
+}
