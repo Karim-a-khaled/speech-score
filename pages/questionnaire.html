@@ -13,38 +13,30 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #1e4a66;">
-    <div class="container">
-      <div class="the-logo">
-        <a class="navbar-brand the-logo" href="../index.html"
-          ><img src="/assets/logo-no-background (1).png" width="92px" alt="logo"
-        /></a>
-      </div>
 
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+  <nav class="navbar navbar-expand-lg d-flex bg-body-tertiary"  style="background-color: #1e4a66 !important;">
+    <div class="container-fluid">
+      <a class="navbar-brand flex-grow-1 the-logo" href="../index.html"
+      ><img src="/assets/new-logo.svg" width="150px" alt="logo"
+    /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse d-flex justify-content-center " id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 header">
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 center-a d-flex justify-content-center">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#footer">Contact Us</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="#">Donations</a>
           </li>
+          <li class="flex-grow-1 nav-item dropdown">
+            <a class=" nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+          </li>
           <li class="nav-item">
-            <a class="nav-link" href="pages/login.html">Sign Out</a>
+            <a class="nav-link" href="./login.html">Sign Out</a>
           </li>
         </ul>
       </div>
@@ -55,13 +47,16 @@
 
 
 
-    <div class="container-fluid">
-      <div class="row media ">
-        <div class="col-lg-5 col-md-6 d-md-none d-lg-block d-flex align-items-center justify-content-center image-class">
-          <!-- <img class="image" src="../assets/3d-illustration-pen-putting-blue-ticks-paper__Large_-removebg-preview.png"  alt="image"> -->
-          <lottie-player src="https://lottie.host/6da6f9d9-bf09-4207-a6b6-08fb85d1a97e/MVlWjZ0yXo.json"  background="transparent"  speed="1"  style="width: 400px; height: 400px;"  loop autoplay></lottie-player>
 
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-5 col-md-6 d-md-none d-lg-block d-flex align-items-center justify-content-center">
+          <!-- <img class="image" src="../assets/3d-illustration-pen-putting-blue-ticks-paper__Large_-removebg-preview.png"  alt="image"> -->
+          <div class="d-flex justify-content-center align-items-center h-100" style="background-color: transparent;">
+            <lottie-player  src="https://lottie.host/6da6f9d9-bf09-4207-a6b6-08fb85d1a97e/MVlWjZ0yXo.json" class=""  background="tranparent"  speed="1"  style="width: 400px; height: 400px;"  loop autoplay></lottie-player>
+          </div>
         </div>
+
         <div class="col-lg-7 d-flex col-md-12 align-items-center col-md-5 form-class p-5">   
           <form class="row row-gap-2  g-3 needs-validation" novalidate>
 
@@ -83,7 +78,6 @@
             </div>
 
             <div class="row column-gap-4">
-
               <div class="col">
                 <label for="validationCustom03" class="form-label">Phone Number</label>
                 <input type="number" class="form-control" id="validationCustom03" required>
@@ -182,3 +176,48 @@
 <script src="../scripts/questionnaire.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+<!--   
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #1e4a66;">
+    <div class="container">
+      <div class="the-logo">
+        <a class="navbar-brand the-logo" href="../index.html"
+          ><img src="/assets/logo-no-background (1).png" width="92px" alt="logo"
+        /></a>
+      </div>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse d-flex justify-content-center " id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 header">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Donations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/login.html">Sign Out</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> -->

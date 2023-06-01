@@ -2,22 +2,16 @@
   color: black !important;
 }
 
-.showcase{
-  height: 100vh;
-  background-image: url(/assets/notebook-gc1f2a5a6c_1280.jpg);
-  background-size: cover; 
-  background-position: center center;
-  background-repeat: no-repeat;
+body{
+  background-color: #1e4a660f;
+  color: #1e4a66;
+
+
 }
 
-.welcome{
-  width: 60%;
-  padding: 100px;
-  text-align: center;
-  margin: 0 auto;
-  color: white;
-  text-transform: capitalize;
-  font-weight: 700;
+.programmer-vector{
+  width: 450px;
+  padding: 110px 0 57px 0;
 }
 .btn{
   margin-top: 20px;
@@ -43,20 +37,23 @@
 }
 
 /* Apply the animation to the heading */
-.welcome .first {
+.first {
+  text-transform: capitalize;
   overflow: hidden; /* Ensures the text does not overflow the container */
-  border-right: .15em solid white; /* Creates the blinking cursor */
   white-space: nowrap; /* Ensures the text is on one line */
   font-size: 3em; /* Optional: adjust the font size as needed */
   animation: typing 1s steps(30, end);
+  margin-bottom: 15px;
 }
-  
-  .welcome .second {
-    overflow: hidden;
-    white-space: nowrap;
-    font-size: 2.5em;
-    animation: slidein 2s ease-in-out;
-  }
+
+.second {
+  text-transform: capitalize;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 2.2em;
+  animation: slidein 2s ease-in-out;
+  margin-bottom: 15px;
+}
   
 
   /* Apply the animation to the button */

@@ -35,3 +35,7 @@ let submitBtn = document.querySelector('.register')
 }
 
 submitBtn.addEventListener('click', register)
+
+
+
+
