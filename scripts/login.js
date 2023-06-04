@@ -17,6 +17,7 @@ const auth = getAuth(app)
 const db = getDatabase(app)
 // start
 let signInBtn = document.querySelector('.sign-in-btn')
+let container = document.querySelector('.container')
 
 
 const userSignIn = async() => {
@@ -26,8 +27,12 @@ const userSignIn = async() => {
   signInWithEmailAndPassword(auth, signInEmail, signInPassword)
   .then((userCredential) => {
     const user = userCredential.user;
-    alert("You have signed in successfully!");
-    window.location.href = "../pages/tests.html"
+    let marked = document.querySelector('.marked')
+    container.innerHTML = ''
+    marked.className = 'markedd'
+    setTimeout(() => {
+      window.location.href = '../pages/tests.html'
+    }, 4000);
   })
   .catch((error) => {
     const errorCode = error.code;
