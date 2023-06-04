@@ -10,69 +10,60 @@
   <link rel="stylesheet" href="../styles/technical-quiz.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #1e4a66;">
-    <div class="container">
-      <div class="the-logo">
-        <a class="navbar-brand the-logo" href="../index.html"
-          ><img src="/assets/logo-no-background (1).png" width="92px" alt="logo"
-        /></a>
-      </div>
-
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+  <nav class="navbar navbar-expand-lg d-flex bg-body-tertiary"  style="background-color: #1e4a66 !important;">
+    <div class="container-fluid">
+      <a class="navbar-brand flex-grow-1 the-logo" href="../index.html"
+      ><img src="/assets/new-logo.svg" width="150px" alt="logo"
+    /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse " id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 header">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 center-a d-flex justify-content-center">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#footer">Contact Us</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="#">Donations</a>
           </li>
+          <li class="flex-grow-1 nav-item dropdown">
+            <a class=" nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+          </li>
           <li class="nav-item">
-            <a class="nav-link" href="pages/login.html">Sign Out</a>
+            <a class="nav-link" href="./login.html">Sign Out</a>
           </li>
         </ul>
       </div>
     </div>
-  </nav>
+  </nav>>
 
 
   <div class="container" style="height: 100vh;">
 
   </div>
 
-<footer class="footer" id="footer" style="background-color: #1e4a66;">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 d-flex flex-column align-items-center justify-content-center">
-        <ul class="social-icons d-flex justify-content-center">
-          <li><a href="#"><i class="fab fa-2x fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fab fa-2x fa-linkedin"></i></a></li>
-          <li><a href="#"><i class="fab fa-2x fa-twitter"></i></a></li>
-        </ul>
-        <ul class="list-unstyled d-flex justify-content-center">
-          <li><a class="footer-li" href="#">Home</a></li>
-          <li><a class="footer-li" href="#">Blog</a></li>
-          <li><a class="footer-li" href="#">Contact Us</a></li>
-          <li><a class="footer-li" href="#">About Us</a></li>
-        </ul>
-        <p style="color: white;" class="text-center">&copy; 2023 Speech Score. All Rights Reserved.</p>
+  <footer class="footer" id="footer" style="background-color: #1e4a66;">
+    <div class="container">
+      <div class="row pt-3">
+        <div class="col-lg-12 d-flex flex-column align-items-center justify-content-center">
+          <ul class="list-unstyled d-flex justify-content-center">
+            <a class="icon-footer" href="#"><img src="../assets/facebook-icon.svg" alt="facebook"></a>
+            <a class="icon-footer" href="#"><img src="../assets/linkedin.svg" alt="linkedin"></a>
+            <a class="icon-footer" href="#"><img src="../assets/twitter.svg" alt="twitter"></a>
+          </ul>
+          <ul class="list-unstyled d-flex justify-content-center">
+            <li><a class="footer-li" href="#">Home</a></li>
+            <li><a class="footer-li" href="#">Blog</a></li>
+            <li><a class="footer-li" href="#">Contact Us</a></li>
+            <li><a class="footer-li" href="#">About Us</a></li>
+          </ul>
+          <p style="color: white;" class="text-center">&copy; 2023 Speech Score. All Rights Reserved.</p>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
   
 

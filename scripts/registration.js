@@ -16,26 +16,31 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app)
 const db = getDatabase(app)
 // start
-
+let container = document.querySelector('.container')
 let submitBtn = document.querySelector('.register')
-  const register = async() => {
-    const signUpEmail = document.querySelector('.email').value
-    const signUpPassword = document.querySelector('.password').value
-    createUserWithEmailAndPassword(auth, signUpEmail, signUpPassword)
-    .then((userCredential) => {
-        const user = userCredential.user;
-        console.log(user);
-        alert("Your account has been created!");
-    })
-    .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        alert(errorCode + errorMessage)
-    })
+
+const register = async() => {
+  event.preventDefault();
+  const signUpEmail = document.querySelector('.email').value
+  const signUpPassword = document.querySelector('.password').value
+  createUserWithEmailAndPassword(auth, signUpEmail, signUpPassword)
+  .then((userCredential) => {
+    const user = userCredential.user;
+    let marked = document.querySelector('.marked')
+    container.innerHTML = ''
+    marked.className = 'markedd'
+    setTimeout(() => {
+      window.location.href = '../pages/tests.html'
+    }, 4000);
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    alert(errorCode + errorMessage)
+  })
 }
 
+
 submitBtn.addEventListener('click', register)
-
-
 
 

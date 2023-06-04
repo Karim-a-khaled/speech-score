@@ -5,6 +5,11 @@
     box-sizing: border-box;
   }
 
+  body{
+    background-color: #1e4a660f;
+    color: #1e4a66;
+  }
+  
 
 .row>* {
   flex-shrink: 0;
