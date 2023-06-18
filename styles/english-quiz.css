@@ -2,3 +2,34 @@ body{
   background-color: #1e4a660f;
   color: #1e4a66;
 }
+.question{
+  font-size: 30px;
+}
+.question{
+  margin-top: 200px;
+  background: #c7c8cc;
+  opacity: 0.8;
+  padding: 40px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  font-weight: 600;
+  line-height: 40px;
+  font-size: 25px;
+  position: relative;
+}
+
+.submit-btn{
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border: none;
+  border-radius: 5px;
+  position: absolute;
+  bottom:10px;
+  right: 20px;
+  padding: 5px 20px;
+}
+
+.timer{
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
